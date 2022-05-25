@@ -11,6 +11,7 @@ const UsersList = (props) => {
       every object has a name and age property */}
         {props.users.map((user) => (
           <li>
+            key={user.id}
             {user.name} ({user.name} years old){" "}
           </li>
         ))}
@@ -18,6 +19,5 @@ const UsersList = (props) => {
     </Card>
   );
 };
-
 
 export default UsersList;
